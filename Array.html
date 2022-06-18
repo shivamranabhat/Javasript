@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        //Methods to declare to an array
+        //First Method 
+        const arr = ['A', 'B', 'C'];
+        document.write(arr + "<br>");
+        //Second method is to use the built in Array() constructor
+        const arr1 = new Array('A', 'B', 'C');
+        document.write(arr1 + "<br>");
+        //Third method is to use string.split(', ')
+        const arr2 = ('A,B,C').split(', ');
+        document.write(arr2+"<br>");
+        //We can also define object inside an array
+        const array = [
+            {
+                name: 'Shivam',
+                age: 21,
+            },
+            {
+                name: 'Ram',
+                age: 22,
+            }
+        ];
+        //to access the value inside the array
+        //Method 1
+        for (let i = 0; i < array.length; i++) {
+            document.write(array[i].name+array[i].age+"<br>");
+        }
+        //Method 2: or we can make function inside the objects
+        const array1 = [
+            {
+                name: 'Shivam',
+                age: 21,
+                getDetails: function() {
+                   return this.name+this.age;
+                }
+            },
+            {
+                name: 'Ram',
+                age: 22,
+                getDetails: function() {
+                   return this.name+this.age;
+                }
+            }
+        ];
+        for(let i = 0; i< array1.length; i++){
+            document.write(array1[i.getDetails()]);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of variables</title>
+</head>
+<body>
+    <script>
+        //using var we can reassign the value of a variable
+        var a = 10;
+        function getVal(){
+            var a = 11;
+            document.write("The value is "+a+"<br>");
+        }
+        getVal();
+        document.write(a+"<br>");
+        //In let we can reassign the value of variable outside the block of code
+        let b = 20; 
+        function getLetVal(){
+            let b = 21;
+            document.write("The value using let is " +b+"<br>");
+        }
+        getLetVal();
+        document.write(b);
+        //Not allowed or error way to assign the value using let
+        // function getLetValur(){
+        //     let c = 20;
+        //     let c = 21; //this will show error as the value of c is already been declared
+        //     document.write(c);
+        // }
+    </script>
+</body>
+</html>

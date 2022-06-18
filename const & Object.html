@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const</title>
+</head>
+
+<body>
+    <script>
+        //Const is mainly used to declare objects, array and functions
+        const fruits = { A: 'Apple', B: 'Mango', C: 'Banana' };
+        //we cannot do like this which bring error
+        // fruits = {D:'Orange'};
+        //but can do like this
+        fruits.D = 'Orange';
+        //To access all the properties inside the object
+        //Method 1
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+        };
+        document.write("Firstname:"+person.firstName+"<br>"+"LastName:"+person.lastName+"<br>"+"ID:"+person.id+"<br>");
+        //method 2
+        const details = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            getDetails : function() {
+                return this.firstName+"<br>"+this.lastName+"<br>"+this.id //this is used to access the property using name because it is inside the object
+            }
+        };
+        document.write(details.getDetails());
+    </script>
+</body>
+
+</html>
