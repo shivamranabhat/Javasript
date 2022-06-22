@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JS Fundamentals</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        //Function that takes two numbers a and b and return the sum of a and b
+        function sum(a,b){
+            return a + b;
+        }
+        //Function that takes an array (a) as arguments and returns the no.of elements in a
+        function myLength(a){
+            return a.length;
+        }
+        //Function that takes a string (x) as arguments and get first 3 characters of x.
+        function getChar(x){
+            return x.slice(0,3); //0 is starting pointing and 3 is ending point
+        }
+        //Function that takes a string (y) as arguments and remove first 3 characters of y.
+        function getCharacter(y){
+            return y.slice(3); //If you declare only one parameter inside slice the it will be ending point
+        }
+        // Function to get exactly the half of the string
+        function getHalf(word){
+            if(word.length % 2 == 0){
+                return word.slice(0, word.length/2);
+            }
+            return word;
+        }
+        //Function that takes two numbers a and b as arguments
+        //If a is smaller than b, divide a by b
+        //Otherwise, multiply both numbers
+        function getNum(a,b){
+            return (a < b)? b/a : b*a; // ? is if and : is else
+        }
+
+    </script>
+</body>
+</html>
