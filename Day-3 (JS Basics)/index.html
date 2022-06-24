@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-3</title>
+</head>
+
+<body>
+    <script>
+
+        //Function that takes a as an arguments and remove last three letters of it
+        function removeLetters(a) {
+            return a.slice(0, -3); //0 is the starting point and -3 will remove its last three letters
+        }
+        // function that takes an object with two properties and string as an args
+        //return the value of the property with key equal to the value
+        function getKey(obj, key) {
+            for (key in obj) {
+                return obj[key];
+            }
+        }
+        //function that takes an array as an arguments and arrange the values in alphabetical order
+        function sortArray(arr) {
+            return arr.sort();
+        }
+        //function to get first half of the array
+        function getHalf(a) {
+            for (let i = 0; i < a.length; i++) {
+                return a.slice(0, a.length / 2);
+            }
+        }
+        //To check if the value is present in array or not using include function
+        function getVal(set, val) {
+            return (set.includes(val)) ? true : false;
+        }
+    </script>
+</body>
+
+</html>
